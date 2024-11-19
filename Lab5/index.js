@@ -1,6 +1,6 @@
 import PathParameters from "./PathParameters.js";
 import QueryParameters from "./QueryParameters.js";
-import RequestBody from "./RequestBody.js";
+const RequestBody = require('./RequestBody.js');
 import WorkingWithObjects from "./WorkingWithObjects.js";
 import WorkingWithArrays from "./WorkingWithArrays.js";
 import cors from "cors";
