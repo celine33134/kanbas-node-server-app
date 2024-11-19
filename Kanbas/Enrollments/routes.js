@@ -10,7 +10,7 @@ export default function EnrollmentRoutes(app) {
         res.status(201).json(newEnrollment);
     });
 
-    // Unenroll user from a course
+    // Unroll user from a course
     app.delete("/api/courses/:courseId/unenroll", (req, res) => {
         const { courseId } = req.params;
         const { userId } = req.body; // Assume userId is passed in the body
