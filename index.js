@@ -9,17 +9,7 @@ import CourseRoutes from "./Kanbas/Courses/routes.js";
 import ModuleRoutes from "./Kanbas/Modules/routes.js";
 
 import EnrollmentRoutes from "./Kanbas/Enrollments/routes.js";
-// const express = require('express')
 const app = express()
-
-
-// app.get('/hello', (req, res) => {res.send('Life is good!')})
-// app.get('/', (req, res) => {
-//     res.send('Welcome to Full Stack Development!')})
-// app.listen(4000)
-
-// app.get('/hello', (req, res) => {res.send('Hello World!')})
-// app.listen(4000)
 
 app.use(cors({
         credentials: true,
@@ -45,9 +35,6 @@ app.use(express.json());
 UserRoutes(app);
 CourseRoutes(app);
 EnrollmentRoutes(app);
-Lab5(app);
-Hello(app);
-// EnrollmentRoutes(app);
 ModuleRoutes(app);
 
 app.listen(process.env.PORT || 4000)
